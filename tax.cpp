@@ -1,20 +1,31 @@
+//programmed 2022
 #include <iostream>
 #include <iomanip>
+using namespace std;
 
 int main()
 {
-    double tax;
-    int beforeTotal, afterTotal, subtract;
+    double taxrate;
+    double allTotal, afterTotal, beforetax;
 
-    std::cout << "Enter tax percentage: ";
-    cin >> tax;
-    
-    std::cout << "Enter total: ";
-    cin >> beforeTotal;
-    
-    
-    
-    std:: cout << "Total:" << afterTotal << endl;
-    
+    cout << "Enter tax percentage: ";
+    cin >> taxrate;
+
+    cout << "Enter total: $";
+    cin >> allTotal;
+
+    beforetax = (allTotal * taxrate)/100;
+
+    afterTotal = beforetax + allTotal;
+
+    //display outputs
+    cout << endl;
+    cout << setprecision(2) << fixed;
+    cout << "Before total: $" << allTotal << endl;
+    cout << "Tax: $" << beforetax << endl;
+    cout << "Your total: $" << afterTotal << endl;
+
+    cout << "Designed by Andy Huynh" << endl;
+
     return 0;
 }
