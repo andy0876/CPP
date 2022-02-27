@@ -1,4 +1,4 @@
-//WARNING: the outputs may not be incorrect
+//programmed 2022
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -8,11 +8,11 @@ int main()
     double taxrate;
     double allTotal, afterTotal, beforetax;
 
-    cout << "Enter tax percentage: ";
-    cin >> taxrate;
-
-    cout << "Enter total: $";
+    cout << "Enter Subtotal: $";
     cin >> allTotal;
+
+    cout << "Enter Tax: ";
+    cin >> taxrate;
 
     beforetax = (allTotal * taxrate)/100;
 
@@ -23,7 +23,7 @@ int main()
     cout << setprecision(2) << fixed;
     cout << "Before total: $" << allTotal << endl;
     cout << "Tax: $" << beforetax << endl;
-    cout << "Your total: $" << afterTotal << endl;
+    cout << "Total Price with (" << taxrate << "%)" <<  " Tax: $" << afterTotal << endl;
 
     cout << "Designed by Andy Huynh" << endl;
 
