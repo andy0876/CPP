@@ -9,7 +9,7 @@ int main(){
     int* cab = jobs;
     jam = cab;
     
-    cout << boxes[3] << " " << *boxes << " " << boxes[1] << endl;
+    cout << boxes[3] << " " << *boxes << " " << jam[2] << " " << *cab << endl;
     
     jam = &boxes[1];
     cab++;
