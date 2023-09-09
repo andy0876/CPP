@@ -1,1 +1,1 @@
-
+https://pythontutor.com/render.html#code=int%20main%28%29%20%7B%0Aint%20kitchen%20%3D%201%3B%0Aint%20bedroom%20%3D%201%3B%0Aint*%20pointer%20%3D%20%26bedroom%3B%0Aint*%20p2%3B%0Ap2%20%3D%20pointer%3B%0A*p2%20%3D%205%3B%0Apointer%20%3D%20%26kitchen%3B%0A*pointer%20%3D%20*p2%3B%0A%20%20return%200%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D&textReferences=false
