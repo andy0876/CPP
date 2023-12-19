@@ -3,26 +3,24 @@
 using namespace std;
 int main ()
 {
-    string name;
     string username;
     string password;
+    string fullname;
     
-    cout << "Enter your name: " << "\n";
-    getline(cin, name, '\n');
     cout << "Enter your username: " << "\n";
     getline( cin, username, '\n' );
     cout << "Enter your password: " << "\n";
     getline( cin, password, '\n' );
+    cout << "Enter your secret name: " << endl;
+    getline(cin,fullname,'\n' );
     
-    if ( name == "andy" && username != "root" && password != "xyzzy" )
+    if ( (username == "root" && password == "xyzzy") && fullname == "andy" )
     {
         cout << "Access allowed" << "\n";
-    } else if (name == "andy" || !(username == "root" && password == "xyzzy")) {
-        cout << "Bad username or password. Denied access!" << "\n";
+    } else if (username == "root" && password == "xyzzy") {
+        cout << "Access allowed 2 but missing 'andy' in input" << endl;
     } else {
-        cout << "Access allowed but missing 'Andy' in input";
-
+        cout << "Access denied" << endl;
     }
-    // continue onward!
     return 0;
 }
