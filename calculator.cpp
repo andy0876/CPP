@@ -18,13 +18,13 @@ int main() {
     cin >> number2;
     
     if (operation == '+') {
-        calculate = number2 + number;
+        calculate = number + number2;
     } else if (operation == '-') {
-        calculate = number2 + number;
+        calculate = number - number2;
     } else if (operation == '/') {
-        calculate = number2 / number;
+        calculate = number / number2;
     } else {
-        calculate = number2 * number;
+        calculate = number * number2;
     }
     
     cout << number << " " << operation << " " << number2 << " = " << calculate;
